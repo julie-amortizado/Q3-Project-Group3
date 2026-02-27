@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q3 Skills Test</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		nav.footer-navbar{
+            margin-top: auto;
+        }
+
+        nav.top-navbar{
+            position: sticky;
+            top: 0;
+        }
+
+        body{
+            
+            min-height: 100vh; 
+            font-family: Poppins;
+            background: lightgray;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #img-pfp{
+        	height: 200px;
+        	width: 200px;
+        }
+
+        div{
+            border-radius: 15px;
+        }
+
+        #box{
+            padding-bottom: 25px;
+        }
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark top-navbar">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Fare Matrix</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="academics.html">Help</a></li>
+                    
+                    
+                </ul>
+
+                <form class="d-flex">
+                	<a href="contact_us.html" style="margin-left: 850px; margin-right: 20px;">Book Now!</a>
+                    <button class="btn btn-primary" type="button">Create Account</button>
+                </form>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+    <div class="bg-dark text-light mx-5 my-5" style="border-radius: 15px;">
+        <br>
+    	<h1 class="text-center"><b>REGISTRATION</b></h1>
+        <br>
+    </div>
+
+
+    <div class="row bg-dark text-light mx-5" id="box">
+    		<div class="col-lg-5">
+    			<br>
+	    		<img class="rounded-circle mx-auto d-block" src="https://i.pinimg.com/736x/9e/83/75/9e837528f01cf3f42119c5aeeed1b336.jpg" id="img-pfp">
+	    		<br><br>
+			    	
+			    <div class="col-lg-6 mx-auto d-block">
+			  		<input class="form-control form-control-sm " id="formFileSm" type="file">
+	  				<br>
+	    			<button class="btn btn-primary mx-auto d-block" onclick="change()">Change your Profile Picture</button>
+                    <br>
+    			</div>
+    		</div>
+
+
+    	<div class="col-lg-6">
+    		<br>
+    		<form action="#" class="form form-control">
+                <h1><b>Form:</b></h1>
+                <details class="ontoggle">
+                <summary>Instructions</summary>
+                <p>Kindly fill out all required fields truthfully and submit.</p>
+                </details>
+                <br>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <label for="name">First Name:</label>
+                        <br>
+                        <input class="form form-control" type="name" name="name" placeholder="Enter First Name">
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <label for="name">Last Name:</label>
+                        <br>
+                        <input class="form form-control" type="name" name="name" placeholder="Enter Last Name">
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3">
+                        <label for="age">Age:</label>
+                        <br>
+                        <input class="form form-control" type="number" name="number" placeholder="Age">
+                    </div>
+                    <div class="col-lg-9">
+                        <label for="contactnumber">Contact Number:</label>
+                        <br>
+                        <input class="form form-control" type="number" name="contact number" placeholder="Enter Contact Number">
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <label for="email">Email:</label>
+                        <br>
+                        <input class="form form-control" type="email" name="email" placeholder="Enter Email">
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <label for="username">Username:</label>
+                        <br>
+                        <input class="form form-control" type="email" name="username" placeholder="Enter Email">
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <label for="password">Password:</label>
+                        <br>
+                        <input class="form form-control" type="password" name="password" placeholder="Enter Password">
+                        <br>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <button class="form form-control bg-primary text-light" id="" onclick="create()">Create Account</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <button class="form form-control bg-dark text-light">Cancel</button>
+                    </div>
+                </div>
+            </form>
+    </div>
+    
+    </div>
+    <br>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light footer-navbar ">
+        <div class="container text-center mx-auto d-block">
+            <h6>Lance Catu | 9-Ruby 2025-2026</h1>
+        </div>
+    </nav>
+
+    <script>
+        function create(){
+            alert("Account Created!");
+        }
+
+        function change(){
+            alert("Profile Picture Updated!");
+        }
+    </script>
+
+
+</body>
+</html>
