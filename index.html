@@ -17,6 +17,11 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
 </style>
 
 <body>
@@ -33,33 +38,43 @@
         <div class="collapse navbar-collapse" id="navbarContent">
 
             <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Fare Matrix</a>
+                <li class="nav-item" style="margin-right: 15px; margin-left: 18px;">
+                    <a class="index.html" href="#">Home</a>
                 </li>
+
+                <li class="nav-item" style="margin-right: 15px; ">
+                    <a class="farematrix.html" href="#">Fare Matrix</a>
+                </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Registration</a>
+                    <a class="registration.html" href="#">Registration</a>
                 </li>
             </ul>
 
-            <form class="d-flex me-2">
-                <input class="form-control" type="search" placeholder="Search" style="width: 180px;">
+            <form class="d-flex">
+                <a href="#" style="margin-left: 850px; margin-right: 20px;">Book Now!</a>
+                <button class="btn btn-outline-light" type="button"><a href="registration.html" >Create Account</a></button>
             </form>
-
-            <button class="btn btn-outline-light">Login</button>
         </div>
     </div>
 </nav>
 
 
 <div style=" background-size: cover; background-position: center; height: 720px; display: flex; justify-content: center; align-items: center;">
-    <div style="background-color: rgba(255,255,255,0.8); padding: 40px; border-radius: 15px; text-align: center;width: 60%;">
+    <div style="background-color: rgba(255,255,255,0.5); padding: 40px; border-radius: 15px; text-align: center; width: 60%;">
 
-        <h1 style="font-weight: bold;">Welcome to eSakayMo</h1>
-        <p>Simple Fare Guide System</p>
+        <h1 style="font-weight: bold; font-size: 50px;">Welcome to eSakayMo</h1>
+        <p style="margin-top: 5px;">Simple Fare Guide System</p>
 
-        <button class="btn btn-primary mt-3">Get Started</button>
+        <button class="btn btn-secondary mt-1" id="getstarted" onclick="start()">Get Started</button>
     </div>
 </div>
+
+<script>
+    function start() {
+        alert("Register account before getting started.");
+    }
+</script>
 
 
 </body>
